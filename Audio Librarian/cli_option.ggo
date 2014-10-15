@@ -1,0 +1,24 @@
+# Copyright (c) 2014 Zedcat. All rights reserved.
+
+# Audio Librarian option description to be processed by gengetopt
+
+package "audiolibrarian"
+version "1.0"
+purpose "Split audiofiles and tag the slices."
+
+section "Basic arguments"
+
+option "input-file"			i "input file name"
+	typestr="path"
+	string
+option "target"             o "target name"
+	typestr="string"
+	string
+option "output-path"		p "path to output files"
+	typestr="path"
+	string
+option "tags"               t "tags, comma separated, no spaces"
+	typestr="words"
+	string
+option "dry-run"            d "don't write new files, only print information"
+    optional
