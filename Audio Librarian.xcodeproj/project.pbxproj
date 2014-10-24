@@ -29,6 +29,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5D0CA30619FB0C5D0061C44E /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		5D3B533D19EEC74700548E77 /* al */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = al; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D3B534219EEC74700548E77 /* Audio_Librarian.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Audio_Librarian.1; sourceTree = "<group>"; };
 		5D69BBA819EEC7F70074CA77 /* analysis.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = analysis.c; sourceTree = "<group>"; };
@@ -86,6 +87,7 @@
 				5D69BBAC19EEC7F70074CA77 /* main.c */,
 				5D69BBAD19EEC7F70074CA77 /* main.h */,
 				5D3B534219EEC74700548E77 /* Audio_Librarian.1 */,
+				5D0CA30619FB0C5D0061C44E /* README */,
 			);
 			path = "Audio Librarian";
 			sourceTree = "<group>";

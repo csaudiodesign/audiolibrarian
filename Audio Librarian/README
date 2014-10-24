@@ -1,0 +1,9 @@
+XCode
+--------------------------------------------------------------------------------
+in order to keep the command line interface option up to date, the
+cli_option.ggo should be translated into code before building the project.
+
+Add this to your "Build Pre-actions":
+
+/usr/local/bin/gengetopt -i "${SOURCE_ROOT}/cs.init/cli_option.ggo" \
+    --output-dir="${SOURCE_ROOT}/cs.init/"
