@@ -21,12 +21,12 @@ extern "C" {
 
 #ifndef CMDLINE_PARSER_PACKAGE
 /** @brief the program name (used for printing errors) */
-#define CMDLINE_PARSER_PACKAGE "cs.init"
+#define CMDLINE_PARSER_PACKAGE "audiolibrarian"
 #endif
 
 #ifndef CMDLINE_PARSER_PACKAGE_NAME
 /** @brief the complete program name (used for help and version) */
-#define CMDLINE_PARSER_PACKAGE_NAME "cs.init"
+#define CMDLINE_PARSER_PACKAGE_NAME "audiolibrarian"
 #endif
 
 #ifndef CMDLINE_PARSER_VERSION
