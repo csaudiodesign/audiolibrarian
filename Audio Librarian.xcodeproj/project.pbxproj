@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5D3B534319EEC74700548E77 /* Audio_Librarian.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5D3B534219EEC74700548E77 /* Audio_Librarian.1 */; };
+		5D3B534319EEC74700548E77 /* al.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5D3B534219EEC74700548E77 /* al.1 */; };
 		5D69BBAE19EEC7F70074CA77 /* analysis.c in Sources */ = {isa = PBXBuildFile; fileRef = 5D69BBA819EEC7F70074CA77 /* analysis.c */; };
 		5D69BBAF19EEC7F70074CA77 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 5D69BBAC19EEC7F70074CA77 /* main.c */; };
 		5D69BBBC19EEC9610074CA77 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D69BBBB19EEC9610074CA77 /* Accelerate.framework */; };
@@ -19,10 +19,10 @@
 		5D3B533B19EEC74700548E77 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
+			dstPath = /share/man/man1;
 			dstSubfolderSpec = 0;
 			files = (
-				5D3B534319EEC74700548E77 /* Audio_Librarian.1 in CopyFiles */,
+				5D3B534319EEC74700548E77 /* al.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -31,7 +31,7 @@
 /* Begin PBXFileReference section */
 		5D0CA30619FB0C5D0061C44E /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		5D3B533D19EEC74700548E77 /* al */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = al; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D3B534219EEC74700548E77 /* Audio_Librarian.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Audio_Librarian.1; sourceTree = "<group>"; };
+		5D3B534219EEC74700548E77 /* al.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = al.1; sourceTree = "<group>"; };
 		5D69BBA819EEC7F70074CA77 /* analysis.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = analysis.c; sourceTree = "<group>"; };
 		5D69BBA919EEC7F70074CA77 /* analysis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = analysis.h; sourceTree = "<group>"; };
 		5D69BBAA19EEC7F70074CA77 /* cli_option.ggo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cli_option.ggo; sourceTree = "<group>"; };
@@ -86,7 +86,7 @@
 				5D69BBAB19EEC7F70074CA77 /* audiolibrarian.xcconfig */,
 				5D69BBAC19EEC7F70074CA77 /* main.c */,
 				5D69BBAD19EEC7F70074CA77 /* main.h */,
-				5D3B534219EEC74700548E77 /* Audio_Librarian.1 */,
+				5D3B534219EEC74700548E77 /* al.1 */,
 				5D0CA30619FB0C5D0061C44E /* README */,
 			);
 			path = "Audio Librarian";

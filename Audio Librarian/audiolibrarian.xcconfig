@@ -13,3 +13,9 @@ ARCHS = i386 x86_64
 // Paths
 LIBRARY_SEARCH_PATHS = /usr/local/lib
 USER_HEADER_SEARCH_PATHS = /usr/local/include
+
+// install configuration
+DSTROOT = /usr/local/
+INSTALL_PATH = /bin/
+DEPLOYMENT_LOCATION = YES
+DEPLOYMENT_POSTPROCESSING = YES
