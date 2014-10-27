@@ -14,6 +14,8 @@ ARCHS = i386 x86_64
 LIBRARY_SEARCH_PATHS = /usr/local/lib
 USER_HEADER_SEARCH_PATHS = /usr/local/include
 
+INSTALL_GROUP = admin
+
 // install configuration
 DSTROOT = /usr/local/
 INSTALL_PATH = /bin/
