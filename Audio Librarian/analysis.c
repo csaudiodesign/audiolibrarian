@@ -89,6 +89,11 @@ void loop(t_alib * setup)
 //        exit(1);
 //    }
     
+    /* setup progress indicator */
+    int progress_width = 70;
+    float progress_factor = progress_width / (float)setup->sfinfo.frames;
+    float progress = 0.0;
+    
     while ((length = sf_readf_float (setup->sound_file, setup->block_memory, setup->block_size_frames)))
     {
         /* 
@@ -121,6 +126,27 @@ void loop(t_alib * setup)
 //        setup->block_memory = block_memory_orig;
         
         analyze (setup, length);
+        
+        /* progress indicator output */
+        progress += (float)setup->block_size_frames * progress_factor;
+        if(setup->max_progress) printf("analyzing %.1f\n",progress*(100/progress_width));
+        else {
+            printf("[");
+            for (int p=0; p < progress_width; ++p) {
+                if(p <= progress) printf("=");
+                else printf("-");
+            }
+            printf("] %.1f%% analyzing...\r",progress*(100/progress_width));
+            fflush(stdout);
+        }
+    }
+    
+    /* progress indicator output */
+    if(setup->max_progress) printf("analyzing 100.0\n");
+    else {
+        printf("[");
+        for (int p=0; p < progress; ++p) printf("=");
+        printf("] 100.0%% done.       \n");
     }
     
     search(setup);

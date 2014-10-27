@@ -21,12 +21,12 @@ extern "C" {
 
 #ifndef CMDLINE_PARSER_PACKAGE
 /** @brief the program name (used for printing errors) */
-#define CMDLINE_PARSER_PACKAGE "audiolibrarian"
+#define CMDLINE_PARSER_PACKAGE "al"
 #endif
 
 #ifndef CMDLINE_PARSER_PACKAGE_NAME
 /** @brief the complete program name (used for help and version) */
-#define CMDLINE_PARSER_PACKAGE_NAME "audiolibrarian"
+#define CMDLINE_PARSER_PACKAGE_NAME "al"
 #endif
 
 #ifndef CMDLINE_PARSER_VERSION
@@ -52,6 +52,7 @@ struct gengetopt_args_info
   char * tags_orig;	/**< @brief tags, comma separated, no spaces original value given at command line.  */
   const char *tags_help; /**< @brief tags, comma separated, no spaces help description.  */
   const char *dry_run_help; /**< @brief don't write new files, only print information help description.  */
+  const char *max_progress_help; /**< @brief output max/msp compatible progress data help description.  */
   
   unsigned int help_given ;	/**< @brief Whether help was given.  */
   unsigned int version_given ;	/**< @brief Whether version was given.  */
@@ -60,7 +61,10 @@ struct gengetopt_args_info
   unsigned int output_path_given ;	/**< @brief Whether output-path was given.  */
   unsigned int tags_given ;	/**< @brief Whether tags was given.  */
   unsigned int dry_run_given ;	/**< @brief Whether dry-run was given.  */
+  unsigned int max_progress_given ;	/**< @brief Whether max-progress was given.  */
 
+  char **inputs ; /**< @brief unamed options (options without names) */
+  unsigned inputs_num ; /**< @brief unamed options number */
 } ;
 
 /** @brief The additional parameters to pass to parser functions */

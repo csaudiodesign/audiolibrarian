@@ -51,6 +51,7 @@ typedef struct alib {
     
     char        *output_path;
     bool        dryrun;
+    bool        max_progress;
 } t_alib;
 
 typedef struct analysis {

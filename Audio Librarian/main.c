@@ -46,6 +46,10 @@ int main(int argc, const char * argv[])
     if (args.dry_run_given) setup->dryrun=true;
     else setup->dryrun=false;
     
+    /* arg: max/msp progress compatibility flag */
+    if (args.max_progress_given) setup->max_progress=true;
+    else setup->max_progress=false;
+    
     /* arg: tags */
     if (args.tags_given) setup->tags = args.tags_arg;
     else setup->tags = NULL;
