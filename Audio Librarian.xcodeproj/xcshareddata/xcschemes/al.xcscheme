@@ -10,7 +10,7 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script"
-               scriptText = "/usr/local/bin/gengetopt -i &quot;${SOURCE_ROOT}/Audio Librarian/cli_option.ggo&quot; --output-dir=&quot;${SOURCE_ROOT}/Audio Librarian/&quot;">
+               scriptText = "/usr/local/bin/gengetopt -i &quot;${SOURCE_ROOT}/Audio Librarian/cli_option.ggo&quot; --output-dir=&quot;${SOURCE_ROOT}/Audio Librarian/&quot; --unamed-opts">
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
